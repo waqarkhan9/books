@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
+
+
+
+
 const Books = ()=>{
     const [books, setBooks] = useState([]);
 
@@ -36,6 +40,7 @@ const Books = ()=>{
 
 
     return(
+        
         <div>
             <div className="title">
                 KHAN BOOK SHOP
@@ -50,12 +55,16 @@ const Books = ()=>{
                   <button className="delete" onClick={()=>{handleDelete(book.id)}}>Delete</button>
                   <button className="update"><Link to={`/update/${book.id}`}>Update</Link></button>
 
+     
+
                 </div>
                 )
 
                 )}
             </div>
             <button><Link to="/add">Add new book</Link></button>
+
+      
             
         </div>
     );
