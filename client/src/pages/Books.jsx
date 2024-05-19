@@ -37,7 +37,9 @@ const Books = ()=>{
 
     return(
         <div>
-            <h1>Khan Book Shop</h1>
+            <div className="title">
+                KHAN BOOK SHOP
+            </div>
             <div className="books">
                 {books.map(book =>(
                 <div className="book" key={book.id}>

@@ -62,3 +62,10 @@ img{
     font-weight: bold;
     cursor: pointer;
 }
+.title{
+    color: red;
+    font-size: 50PX;
+    font-weight: 400;
+    font-style: italic;
+    padding: 20px;
+}
